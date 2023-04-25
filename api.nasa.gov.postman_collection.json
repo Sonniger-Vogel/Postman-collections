@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "72d7c7bb-6ca5-4385-b444-f9f80a09173a",
+		"name": "api.nasa.gov",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25751598"
+	},
+	"item": [
+		{
+			"name": "A list of Asteroids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2020-12-10&end_date=2020-12-12&api_key=AeRdd4qSyzJMSyWgbwQzdnfm51hTbAXpt1mqXosZ",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-12-10"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-12-12"
+						},
+						{
+							"key": "api_key",
+							"value": "AeRdd4qSyzJMSyWgbwQzdnfm51hTbAXpt1mqXosZ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "AeRdd4qSyzJMSyWgbwQzdnfm51hTbAXpt1mqXosZ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

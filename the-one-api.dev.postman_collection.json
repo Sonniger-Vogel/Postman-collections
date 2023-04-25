@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "4b7541ec-1985-479b-b02a-fccc8636029d",
+		"name": "the-one-api.dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25751598"
+	},
+	"item": [
+		{
+			"name": "List of books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/book",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/book/5cf5805fb53e011a64671582",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"book",
+						"5cf5805fb53e011a64671582"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chapters of the book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/book/5cf5805fb53e011a64671582/chapter",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"book",
+						"5cf5805fb53e011a64671582",
+						"chapter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/movie",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5b",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"movie",
+						"5cd95395de30eff6ebccde5b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quotes for the movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5b/quote",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"movie",
+						"5cd95395de30eff6ebccde5b",
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Characters",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Characters filter name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character?name=Gollum",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Gollum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Characters filter gender",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character?gender!=Female,Male",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character"
+					],
+					"query": [
+						{
+							"key": "gender!",
+							"value": "Female,Male"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Characters pagination",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character?page=2&limit=5",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific character",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character/5cd99d4bde30eff6ebccfbc1",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character",
+						"5cd99d4bde30eff6ebccfbc1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character's quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/character/5cd99d4bde30eff6ebccfe9e/quote",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"character",
+						"5cd99d4bde30eff6ebccfe9e",
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quotes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/quote",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quotes sorting",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/quote?sort=name:asc",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"quote"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "name:asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific quote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/quote/5cd96e05de30eff6ebccebcd",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"quote",
+						"5cd96e05de30eff6ebccebcd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chapters",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/chapter",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"chapter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific chapter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZxuIvwSACNDI26DpJ971",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/chapter/6091b6d6d58360f988133bb6",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"chapter",
+						"6091b6d6d58360f988133bb6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
